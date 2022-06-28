@@ -1,0 +1,10 @@
+two_column:
+  label: 'Two column with Background'
+  category: 'IKCS Layouts'
+  template: templates/layout--two-column-bg
+  default_region: first
+  regions:
+    first:
+      label: First content
+    second:
+      label: Second content

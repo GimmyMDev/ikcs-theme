@@ -1,0 +1,20 @@
+{% if url %}
+    <div class="overlay-container">
+    <span class="overlay overlay--colored">
+      <span class="overlay-inner">
+        <span class="overlay-icon overlay-icon--button overlay-icon--white overlay-animated overlay-fade-top">
+          <i class="fa fa-plus"></i>
+        </span>
+      </span>
+      <a class="overlay-target-link image-popup" href="{{ url }}"></a>
+    </span>
+        <a href="{{ file_url(image['#uri']) }}">
+            {{ image }}
+        </a>
+    </div>
+
+{% else %}
+    <a href="{{ file_url(image['#uri']) }}" data-toggle="lightbox" data-gallery="gen-gallery" data-type="image">
+        {{ image }}
+    </a>
+{% endif %}

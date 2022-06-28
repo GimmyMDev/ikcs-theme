@@ -1,0 +1,36 @@
+name: Magazine Lite
+type: theme
+base theme: classy
+description: 'A flexible, recolorable theme with many regions and a responsive, mobile-first layout.'
+# core: 8.x
+libraries:
+  - magazine_lite/fontawesome
+  - magazine_lite/global-styling
+  - magazine_lite/messages
+  - magazine_lite/tooltip
+  - magazine_lite/count-to-init
+  - magazine_lite/smooth-scroll
+  - magazine_lite/local-stylesheets
+  - magazine_lite/galleryjs
+libraries-override:
+  classy/base:
+    css:
+      component:
+        css/components/breadcrumb.css: false
+        css/components/pager.css: false
+regions:
+  header_top_first: 'Header Top First'
+  header: 'Header Second'
+  system_messages: 'System Messages'
+  content: 'Content'
+  footer_top_first: 'Pre Footer'
+  footer_bottom_first: 'Footer Left'
+  footer_bottom_second: 'Footer Right'
+  sub_footer_first: 'Enquiry Form'
+  hidden_blocks_collection: 'Mailchimp Form'
+
+# Information added by Drupal.org packaging script on 2017-12-18
+version: '8.x-1.1'
+core: '8.x'
+project: 'magazine_lite'
+datestamp: 1513575189
